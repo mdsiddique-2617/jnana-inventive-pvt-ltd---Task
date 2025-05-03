@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="overall px-2 d-flex flex-column justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 px-5 position-fixed w-100 top-0 start-0">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href="#"><img src="./logo.png" alt="Logo" style="max-height: 40px;"></a>
+
+                <div class="collapse navbar-collapse mx-lg-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                                <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+                                <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+                                <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="propertyDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Property</a>
+                            <ul class="dropdown-menu" aria-labelledby="propertyDropdown">
+                                <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+                                <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="agentsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Agents</a>
+                            <ul class="dropdown-menu" aria-labelledby="agentsDropdown">
+                                <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+                                <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+                                <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <li class="nav-item d-flex align-items-center mx-2">
+                            <i class="fa-solid fa-users me-2"></i>
+                            <a class="nav-link text-dark" href="#">Signin / SignUp</a>
+                        </li>
+                        <button class="btn btn-outline-primary px-3 py-1">Add Property <i
+                                class="fa-solid fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="mainSection position-relative overflow-hidden d-flex align-items-center" style="height: 100vh;">
+            <div class="w-50 ps-5 mainBig">
+                <div>
+                    <h1 class="w-50">Lets find your perfect home <br /> for you.</h1>
+                    <p class="">From as low as $10 per day with limited time offer discounts</p>
+                </div>
+                <img src="./house.png" class="position-absolute right-0 house" alt="">
+                <div class="mainSmall position-relative">
+                    <div class="d-flex align-items-center p-2 bg-light w-25 justify-content-between rounded-top">
+                        <h6 class="fw-light">For Rent</h6>
+                        <h6 class="fw-light">For Sale</h6>
+                    </div>
+                    <div class="d-flex align-items-center p-2 bg-light mainSearchBar rounded-bottom gap-2">
+                        <input type="text" name="" id="" class="w-75 border border-0" placeholder="Search for property">
+                        <i class="fa-solid fa-filter"></i>
+                        <button class="text-decoration-none px-3 p-1 border border-2 rounded">Add<i
+                                class="fa-solid fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+                <div
+                    class="position-absolute align-items-center justify-content-start bg-light d-flex gap-2 videoDiv ps-5">
+                    <i class="fa-solid fa-circle-play fs-2"></i>
+                    <p class="m-0 p-0">Watch Video</p>
+                </div>
+            </div>
+        </main> 
+        <div
+            class="cityProperty w-100 pt-5 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div class="w-75 h-25 position-relative d-flex flex-column align-items-start justify-content-center">
+                <h1 class="">Properties by cities</h1>
+                <p class="">From as low as $10 per day with limited time offer discounts</p>
+                <button class="d-flex align-items-center px-3 p-1 bg-light border rounded position-absolute">All
+                    Cities<i class="fa-solid fa-arrow-right ms-3"></i></button>
+            </div>
+            <section id="slider" class="cityProperty w-75 h-50" aria-label="Property cities carousel">
+                <div id="cityCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./india.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>India</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./america.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>America</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./australia.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Australia</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./china.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>China</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./egypt.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Egypt</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src=".//france.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>France</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./italy.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Italy</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./russia.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Russia</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cityCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cityCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div
+            class="rentProperty w-100 pt-5 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div class="w-75 h-25 position-relative d-flex flex-column align-items-start justify-content-center">
+                <h1 class="">Properties for Rent</h1>
+                <p class="">From as low as $10 per day with limited time offer discounts</p>
+                <div class="d-flex gap-2 position-absolute rentButtons">
+                    <button class="d-flex align-items-center px-3 p-1 border border-0 bg-light rounded text-dark">All
+                        Cities<i class="fa-solid fa-caret-down mx-2"></i></button>
+                    <button class="d-flex align-items-center px-3 p-1 bg-light border border-0 rounded text-dark">All
+                        Cities<i class="fa-solid fa-caret-down mx-2"></i></button>
+                    <button class="d-flex align-items-center px-3 p-1 bg-light border rounded">All
+                        Cities<i class="fa-solid fa-arrow-right ms-3"></i></button>
+                </div>
+            </div>
+            <section id="slider" class="rentProperty w-75 h-50" aria-label="Property cities carousel">
+                <div id="propertyCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home1.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Luxury Family House</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <p>$5800</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home2.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Luxury Family House</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <p>$5800</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home3.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Luxury Family House</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <p>$5800</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home4.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Luxury Family House</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <p>$5800</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home5.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Luxury Family House</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <p>$5800</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home6.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Luxury Family House</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <p>$5800</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home4.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Luxury Family House</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <p>$5800</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home5.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Luxury Family House</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <p>$5800</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home9.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Luxury Family House</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <p>$5800</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="sellOption pt-5 mt-5 d-flex gap-5 justify-content-center align-items-center">
+            <div class="sellLeft d-flex flex-column gap-5">
+                <h1>lets find the right selling option for you</h1>
+                <div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-dollar-sign align-self-start pt-1 fs-4"></i>
+                        <div>
+                            <h6>Easy payment method</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, laboriosam! Quasi,
+                                officiis?</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-sign-hanging align-self-start pt-1 fs-5"></i>
+                        <div>
+                            <h6>fixed fee & Support</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum eveniet ab?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-calculator align-self-start pt-1 fs-4"></i>
+                        <div>
+                            <h6>Tax Advantage</h6>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quia mollitia commodi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sellRight d-flex gap-3 justify-content-between">
+                <div class="d-flex flex-column gap-1 rightFirst justify-content-between">
+                    <div class="h-25 d-flex justify-content-center align-items-center rightContent">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div class="d-flex flex-column justify-content-center align-items-start ms-3">
+                            <h6>15+</h6>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                    <img src="./family.jpeg" alt="">
+                </div>
+                <img src="./interior.jpeg" class="rightNext" alt="">
+            </div>
+        </div>
+        <div
+            class="apartmentProperty w-100 py-5 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div class="w-75 h-25 position-relative d-flex flex-column align-items-start justify-content-center">
+                <h1 class="">Explore Apartment Types</h1>
+                <p class="">From as low as $10 per day with limited time offer discounts</p>
+                <button class="d-flex align-items-center px-3 p-1 bg-light border rounded position-absolute">All
+                    Cities<i class="fa-solid fa-arrow-right ms-3"></i></button>
+            </div>
+            <section id="slider" class="apartmentProperty w-75 h-50 mb-5 pb-5" aria-label="Property cities carousel">
+                <div id="apartmentCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home1.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Houses</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home2.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Apartment</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home3.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Office</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home4.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Villa</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home5.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Townhome</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home6.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Villa</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home7.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Apartment</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home8.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Houses</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home9.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Office</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home10.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Townhome</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home11.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Bangalow</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./home12.jpeg" alt="India">
+                                            <div class="">
+                                                <h5>Apartments</h5>
+                                                <div class="d-flex justify-content-between py-2 align-items-center">
+                                                    <p class="m-0 p-0">1 Property</p>
+                                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#apartmentCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#apartmentCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="coolStuff d-flex mb-5 pb-5 gap-5 justify-content-center align-items-center">
+            <div class="coolLeft d-flex flex-column gap-5">
+                <h1>Have Done Some <br />Cool Stuff</h1>
+                <button class="text-decoration-none bg-dark text-white px-3 p-1 border border-2 rounded w-50">Get
+                    Started<i class="fa-solid fa-arrow-right ms-2"></i></button>
+            </div>
+            <div class="coolRight">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-bag-shopping fs-4"></i>
+                            <h3>15</h3>
+                        </div>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-building fs-4"></i>
+                            <h3>25K</h3>
+                        </div>
+                        <p>Property Ready</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-medal fs-4"></i>
+                            <h3>8</h3>
+                        </div>
+                        <p>Award Winning</p>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-user fs-4"></i>
+                            <h3>23M</h3>
+                        </div>
+                        <p>Total Sellers</p>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-users fs-4"></i>
+                            <h1>12K</h1>
+                        </div>
+                        <p>Dedicated Agents</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="agentProperty w-100 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div class="w-75 h-25 position-relative d-flex flex-column align-items-start justify-content-center">
+                <h1 class="">Meet Our Amazing Property Agents</h1>
+                <button class="d-flex align-items-center px-3 p-1 bg-light border rounded position-absolute">All
+                    Agents<i class="fa-solid fa-arrow-right ms-3"></i></button>
+            </div>
+            <section id="slider" class="agentProperty w-75 h-50 mb-5 pb-5" aria-label="Property cities carousel">
+                <div id="agentCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./agent1.jpeg" alt="India">
+                                            <div class="d-flex flex-column gap-2">
+                                                <h5>Muhammed Siddique</h5>
+                                                <p class="m-0 p-0">1 Property</p>
+                                                <div class="d-flex gap-3">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./agent2.jpeg" alt="India">
+                                            <div class="d-flex flex-column gap-2">
+                                                <h5>Muhammed Siddique</h5>
+                                                <p class="m-0 p-0">1 Property</p>
+                                                <div class="d-flex gap-3">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./agent3.jpeg" alt="India">
+                                            <div class="d-flex flex-column gap-2">
+                                                <h5>Muhammed Siddique</h5>
+                                                <p class="m-0 p-0">1 Property</p>
+                                                <div class="d-flex gap-3">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./agent4.jpeg" alt="India">
+                                            <div class="d-flex flex-column gap-2">
+                                                <h5>Muhammed Siddique</h5>
+                                                <p class="m-0 p-0">1 Property</p>
+                                                <div class="d-flex gap-3">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./agent5.jpeg" alt="India">
+                                            <div class="d-flex flex-column gap-2">
+                                                <h5>Muhammed Siddique</h5>
+                                                <p class="m-0 p-0">1 Property</p>
+                                                <div class="d-flex gap-3">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./agent6.jpeg" alt="India">
+                                            <div class="d-flex flex-column gap-2">
+                                                <h5>Muhammed Siddique</h5>
+                                                <p class="m-0 p-0">1 Property</p>
+                                                <div class="d-flex gap-3">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./agent7.jpeg" alt="India">
+                                            <div class="d-flex flex-column gap-2">
+                                                <h5>Muhammed Siddique</h5>
+                                                <p class="m-0 p-0">1 Property</p>
+                                                <div class="d-flex gap-3">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./agent8.jpeg" alt="India">
+                                            <div class="d-flex flex-column gap-2">
+                                                <h5>Muhammed Siddique</h5>
+                                                <p class="m-0 p-0">1 Property</p>
+                                                <div class="d-flex gap-3">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#agentCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#agentCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="agent-banner my-5">
+            <span>Want to be an agent?</span>
+            <a href="#" class="register-btn p-1 px-3">Register Now ↗</a>
+        </div>
+        <div
+            class="reviewProperty w-100 py-5 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div class="w-75 h-25 position-relative d-flex flex-column align-items-start justify-content-center">
+                <h1 class="">Here is What they say</h1>
+                <button class="d-flex align-items-center px-3 p-1 bg-light border rounded position-absolute">All
+                    Agents<i class="fa-solid fa-arrow-right ms-3"></i></button>
+            </div>
+            <section id="slider" class="reviewProperty w-75 h-50 mb-5 pb-5" aria-label="Property cities carousel">
+                <div id="reviewCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./review.png" alt="India">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                                repudiandae itaque asperiores placeat iusto, quam alias optio.
+                                                Accusamus, exercitationem aperiam!</p>
+                                            <div class="d-flex gap-2">
+                                                <img src="./agent1.jpeg" class="round" alt="India">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Mary gold</h6>
+                                                    <p>CEO @ DotMax</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./review.png" alt="India">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                                repudiandae itaque asperiores placeat iusto, quam alias optio.
+                                                Accusamus, exercitationem aperiam!</p>
+                                            <div class="d-flex gap-2">
+                                                <img src="./agent1.jpeg" class="round" alt="India">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Mary gold</h6>
+                                                    <p>CEO @ DotMax</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./review.png" alt="India">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                                repudiandae itaque asperiores placeat iusto, quam alias optio.
+                                                Accusamus, exercitationem aperiam!</p>
+                                            <div class="d-flex gap-2">
+                                                <img src="./agent1.jpeg" class="round" alt="India">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Mary gold</h6>
+                                                    <p>CEO @ DotMax</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./review.png" alt="India">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                                repudiandae itaque asperiores placeat iusto, quam alias optio.
+                                                Accusamus, exercitationem aperiam!</p>
+                                            <div class="d-flex gap-2">
+                                                <img src="./agent1.jpeg" class="round" alt="India">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Mary gold</h6>
+                                                    <p>CEO @ DotMax</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./review.png" alt="India">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                                repudiandae itaque asperiores placeat iusto, quam alias optio.
+                                                Accusamus, exercitationem aperiam!</p>
+                                            <div class="d-flex gap-2">
+                                                <img src="./agent1.jpeg" class="round" alt="India">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Mary gold</h6>
+                                                    <p>CEO @ DotMax</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./review.png" alt="India">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                                repudiandae itaque asperiores placeat iusto, quam alias optio.
+                                                Accusamus, exercitationem aperiam!</p>
+                                            <div class="d-flex gap-2">
+                                                <img src="./agent1.jpeg" class="round" alt="India">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Mary gold</h6>
+                                                    <p>CEO @ DotMax</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./review.png" alt="India">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                                repudiandae itaque asperiores placeat iusto, quam alias optio.
+                                                Accusamus, exercitationem aperiam!</p>
+                                            <div class="d-flex gap-2">
+                                                <img src="./agent1.jpeg" class="round" alt="India">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Mary gold</h6>
+                                                    <p>CEO @ DotMax</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <div class="city-card d-flex flex-column gap-3 text-start">
+                                            <img src="./review.png" alt="India">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                                repudiandae itaque asperiores placeat iusto, quam alias optio.
+                                                Accusamus, exercitationem aperiam!</p>
+                                            <div class="d-flex gap-2">
+                                                <img src="./agent1.jpeg" class="round" alt="India">
+                                                <div class="d-flex flex-column">
+                                                    <h6>Mary gold</h6>
+                                                    <p>CEO @ DotMax</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="companies d-flex justify-content-center gap-3 mb-5 pb-5">
+            <img src="./company1.jpeg" alt="">
+            <img src="./company2.jpeg" alt="">
+            <img src="./company3.jpeg" alt="">
+            <img src="./company4.jpeg" alt="">
+            <img src="./company5.jpeg" alt="">
+        </div>
+        <div
+            class="blogProperty w-100 py-5 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div class="w-75 h-25 position-relative d-flex flex-column align-items-start justify-content-center">
+                <h1 class="">Latest Blog Post</h1>
+                <button class="d-flex align-items-center px-3 p-1 bg-light border rounded position-absolute">View All<i
+                        class="fa-solid fa-arrow-right ms-3"></i></button>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./home1.jpeg" alt="">
+                    <p>something | something</p>
+                    <h6>Lorem ipsum dolor sit.</h6>
+                </div>
+                <div class="col">
+                    <img src="./home3.jpeg" alt="">
+                    <p>something | something</p>
+                    <h6>Lorem ipsum dolor sit.</h6>
+                </div>
+                <div class="col">
+                    <img src="./home3.jpeg" alt="">
+                    <p>something | something</p>
+                    <h6>Lorem ipsum dolor sit.</h6>
+                </div>
+            </div>
+        </div>
+        <div class="dreamHouse my-5 position-relative overflow-hidden">
+            <div class="p-5 m-5">
+                <h1 class="w-50">Lets find your perfect home <br /> for you.</h1>
+                <p class="">From as low as $10 per day with limited time offer discounts</p>
+                <button class="text-decoration-none bg-dark text-white px-3 p-1 border rounded">Get Started Now<i
+                        class="fa-solid fa-arrow-right ms-2"></i></button>
+            </div>
+            <img src="./dreamHouse.png" class="position-absolute" alt="">
+        </div>
+        <footer class=" p-3" id="Contact">
+            <div class="row md-footersub">
+                <div class="col">
+                    <div class="row">
+                        <img src="./logo.png" alt="">
+                    </div>
+                    <div class="row">
+                        <p>Devoloped by <a href="https://www.linkedin.com/in/muhammed-siddique-6616042a1/" target="_blank">Muhammed Siddique</a></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h4 class="text-danger">General</h4>
+                    </div>
+                    <div class="row">
+                        <p>Home</p>
+                    </div>
+                    <div class="row">
+                        <p>Career</p>
+                    </div>
+                    <div class="row">
+                        <p>safety</p>
+                    </div>
+                    <div class="row">
+                        <p>Contact us</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h4 class="text-danger">CORPORATE</h4>
+                    </div>
+                    <div class="row">
+                        <p>Our History</p>
+                    </div>
+                    <div class="row">
+                        <p>Press Area</p>
+                    </div>
+                    <div class="row">
+                        <p>Release Notes</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h4 class="text-danger">PRODUCTS</h4>
+                    </div>
+                    <div class="row">
+                        <p>Warranty</p>
+                    </div>
+                    <div class="row">
+                        <p>User Manuals</p>
+                    </div>
+                    <div class="row">
+                        <p>Size Guide</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h4 class="text-danger">LEGAL</h4>
+                    </div>
+                    <div class="row">
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="row">
+                        <p>Cookie Policy</p>
+                    </div>
+                    <div class="row">
+                        <p>Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

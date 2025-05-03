@@ -1,0 +1,358 @@
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1030;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    width: auto;
+}
+
+.nav-link {
+    color: #333;
+    font-size: 16px;
+    padding: 8px 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.dropdown-menu {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.mainSection {
+    padding: 1rem;
+    background-color: rgb(179, 199, 207);
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.mainSection img {
+    width: 50%;
+    right: 0;
+    bottom: 0;
+}
+
+.mainSearchBar button {
+    background-color: rgb(255, 100, 43);
+}
+
+.videoDiv {
+    right: 0;
+    bottom: 0;
+    width: 325px;
+    height: 75px;
+    border-top-left-radius: 20px;
+}
+
+/* .cityProperty,
+.rentProperty,
+.sellOption,
+.apartmentProperty,
+.agentProperty,
+.revirewProperty,
+.blogProperty {
+    min-height: 95vh;
+} */
+
+.cityProperty button,
+.rentProperty button,
+.rentProperty .rentButtons,
+.apartmentProperty button,
+.agentProperty button,
+.reviewProperty button,
+.blogProperty button {
+    right: 0;
+    color: orangered;
+}
+
+.cityProperty .carousel-item img {
+    height: 250px;
+    border-radius: 15px;
+}
+
+.rentProperty .carousel-item img {
+    height: 300px;
+    border-radius: 15px;
+}
+
+.apartmentProperty .carousel-item img {
+    border-radius: 15px;
+}
+
+.agentProperty .carousel-item img {
+    border-radius: 15px;
+    height: 200px;
+}
+
+.reviewProperty .carousel-item img {
+    height: 50px;
+}
+
+.round {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.city-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.sellLeft {
+    width: 30%;
+    height: 515px;
+}
+
+.coolLeft {
+    width: 30%;
+}
+
+.sellLeft i {
+    width: 30px !important;
+}
+
+.sellRight {
+    width: 50%;
+    height: 415px;
+}
+
+.coolRight {
+    width: 50%;
+}
+
+.rightContent {
+    background-color: rgb(255, 100, 43);
+    color: white;
+    border-radius: 20px;
+}
+
+.sellRight .rightFirst {
+    width: 40%;
+}
+
+.sellRight .rightFirst img {
+    border-radius: 20px;
+}
+
+.sellRight .rightNext {
+    width: 60%;
+    border-radius: 20px;
+}
+
+.agent-banner {
+    width: 90%;
+    background-color: #ea5b4d;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.register-btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.companies {
+    height: 25vh;
+}
+
+.companies img {
+    width: 200px;
+    height: 75px;
+}
+
+.blogProperty .col img {
+    width: 325px;
+}
+
+.dreamHouse {
+    height: 60vh;
+    background-color: rgb(158, 255, 247);
+    border-radius: 20px;
+}
+
+.dreamHouse img {
+    bottom: -275px;
+    right: 225px;
+}
+
+
+footer{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.md-footersub{
+    width: 90%;
+}
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .btn-outline-primary {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .mainSection {
+        min-height: 100vh;
+    }
+
+    .mainSection .mainBig {
+        width: 100% !important;
+        padding: 0% !important;
+    }
+
+    .mainSection .mainBig h1 {
+        width: 100% !important;
+    }
+
+    .mainSection .mainSmall {
+        width: 100% !important;
+    }
+
+    .mainSection .mainSmall div:first-child {
+        width: 50% !important;
+    }
+
+    .mainSection .mainSmall .mainSearchBar {
+        justify-content: space-between;
+    }
+
+    .mainSection .mainSmall .mainSearchBar input {
+        width: 50% !important;
+    }
+
+    .mainSection .mainSmall .mainSearchBar button {
+        width: 25% !important;
+        padding: 0% !important;
+    }
+
+    .house {
+        width: 300px !important;
+        bottom: 75px !important;
+        right: -25px !important;
+        z-index: 0 !important;
+        /* top: 0% !important; */
+    }
+
+    .cityProperty button,
+    .rentProperty button,
+    .rentProperty .rentButtons,
+    .apartmentProperty button,
+    .agentProperty button,
+    .reviewProperty button,
+    .blogProperty button {
+        display: none !important;
+    }
+
+    .sellOption, .coolStuff{
+        flex-direction: column !important;
+    }
+
+    .sellOption .sellLeft, .sellOption .sellRight {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .sellOption .sellRight .rightContent{
+        flex-direction: column !important;
+        height: auto !important;
+    }
+
+    .sellOption .sellRight .rightContent div{
+        flex-direction: row !important;
+    }
+
+    .coolStuff .coolLeft, .coolStuff .coolRight {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .companies{
+        flex-direction: column !important;
+        align-items: center !important;
+        height: auto !important;
+        justify-content: center !important;
+    }
+
+    .blogProperty .col img {
+        width: 225px;
+    }
+
+    .dreamHouse div:first-child {
+        padding: 1rem !important;
+        margin: 1rem !important;
+    }
+
+    .dreamHouse img {
+        bottom: -375px;
+        right: -100px;
+    }
+    
+    footer .col{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
